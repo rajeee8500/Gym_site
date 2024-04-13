@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ****************************** NAVBAR ******************************
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 50px;
+        cursor: pointer;
+
+        span {
+            font-family: "Italianno", cursive;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 70px;
+            text-shadow: 0px 9px 6px rgb(136, 133, 133);
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 25px;
+
+        img {
+            height: 35px;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+}
+
+// ****************************** STORY ******************************
+.story {
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    .story::-webkit-scrollbar {
+        display: none;
+
+    }
+
+    .acc_div {
+        // width: 150px;
+        // height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        span {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+
+    .sto_div {
+        // width: 150px;
+        // height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 3px solid red;
+        }
+
+        span {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+}
+
+.border {
+    margin-top: 10px;
+    height: 3px;
+    width: 100vw;
+    background-color: rgb(220, 219, 219);
+    border: none;
+}
+
+// ****************************** POSTS ******************************
+
+.posts {
+
+    .post {
+        margin-bottom: 20px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+
+            .top_right {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+
+            img {
+                height: 15px;
+                cursor: pointer;
+                // width: 100px;
+            }
+        }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 900px;
+                height: 600px;
+                border-radius: 10px;
+            }
+        }
+
+        .bottom {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .bottom_left {
+                display: flex;
+                gap: 25px;
+
+                img {
+                    height: 35px;
+                    width: 35px;
+                    cursor: pointer;
+                }
+            }
+
+            img {
+                height: 35px;
+                width: 35px;
+                cursor: pointer;
+            }
+        }
+
+        .user {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .post:last-of-type {
+        margin-bottom: 80px;
+    }
+}
+
+// ****************************** FOOTER ******************************
+.footer {
+    padding: 10px 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    // margin-top: 20px;
+    background-color: white;
+
+    img {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .acc {
+        border-radius: 50%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        div {
+            width: 5px;
+            height: 5px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
+}
+
+// ****************************** LOGIN ******************************
+.login {
+    width: 400px;
+    height: 300px;
+    // margin: 100px auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        button {
+            height: 30px;
+            width: 80px;
+            border: none;
+            background-color: rgb(1, 255, 1);
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+h1 {
+    color: rgb(51, 202, 51);
+    font-style: italic;
+    text-align: center;
+}

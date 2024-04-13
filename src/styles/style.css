@@ -1,0 +1,475 @@
+/* Apply a universal box-sizing rule */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d2ec0f;
+  padding: 1rem;
+  font-size: 2rem;
+  background-image: url('../assests/gym_1.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed during scroll */
+}
+
+.navbar .left span {
+  font-weight: bold;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 3rem; /* Adjust the space between menu items */
+}
+
+.header-menu li a {
+  color: #d2ec0f;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-menu {
+    flex-direction: column;
+    align-items: center; /* Center items when in column layout */
+    gap: 0.5rem; /* Smaller gap for vertical layout */
+  }
+
+  .header-menu li {
+    display: block; /* Ensure list items are full-width for tap targets */
+  }
+}
+
+section {
+  max-width: 100%; /* Optimal reading width */
+  padding: 40px;
+  height: 800px;
+  background-image: url('../assests/gym_1.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+h3 {
+  color: white; /* Dark color for contrast */
+  margin-bottom: 20px; /* Space before the button */
+  font-size: 3rem; /* Large font size for impact */
+  justify-content:center;
+  align-self: center;
+  margin-top: 250px;
+  margin-left: 250px;
+}
+button {
+  background-color: #cde51c; /* Bright, inviting color */
+  color: #000; /* Contrast text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Adequate padding for touch targets */
+  font-size: 1rem; /* Readable font size */
+  cursor: pointer; /* Cursor indication for interactivity */
+  border-radius: 5px; /* Matching rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  justify-content:center;
+  align-self: center;
+  margin-left: 700px;
+}
+
+button:hover {
+  background-color: #787d14; /* Darker shade on hover for feedback */
+}
+.headings{
+  color: #d2ec0f;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #3d3c3c; 
+  margin: 0;
+}
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px; /* Space between cards */
+  background-color: #3d3c3c; 
+  margin: 0;
+}
+
+.program-card {
+  width: 250px; /* Fixed width for each card */
+  background-color: #333; /* Dark background for the card */
+  color: #fff; /* Light text color for contrast */
+  border-radius: 10px; /* Rounded corners for the cards */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align card content to center */
+}
+
+.program-card h5 {
+  margin: 10px 0; /* Space between title and content */
+  font-size: 1.2rem; /* Larger font size for titles */
+}
+
+.program-card p {
+  text-align: center; /* Center-align the text */
+  margin: 10px 0; /* Space above and below the paragraph */
+}
+
+.join-now {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px; /* Space above the join now link */
+  display: flex;
+  align-items: center;
+  color: #cde51c;
+}
+
+.join-now::after {
+  content: '→'; /* Adds an arrow after the 'Join Now' text */
+  margin-left: 5px;
+}
+
+/* Icons for each program card */
+.program-icon {
+  font-size: 2rem; /* Size of the icons */
+  margin-bottom: 10px; /* Space below the icon */
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+  .programs-container {
+    flex-direction: column;
+  }
+
+  .program-card {
+    width: 100%; /* Full width cards on smaller screens */
+    margin: 10px 0; /* Space between vertically stacked cards */
+  }
+}
+
+/* General Styles for the Why Us Container */
+.whyus-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d3c3c;
+  padding: 20px;
+}
+
+/* Styles for the text and image sections within the container */
+.whyus-text, .whyus-img {
+  flex: 1; /* Each section takes equal space */
+  text-align: center;
+  margin: 20px; /* Provide spacing between the text and image */
+}
+
+.whyus-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff; /* Light color text for dark background */
+}
+
+.whyus-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 30px;
+  color: #e0e0e0; /* Light grey for readability */
+}
+
+/* Styling for the image section */
+.whyus-img img {
+  max-width: 100%; /* Responsive image width */
+  height: auto;
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .whyus-container {
+    flex-direction: column;
+  }
+
+  .whyus-text, .whyus-img {
+    margin: 10px 0; /* Adjust margins for smaller screens */
+    flex: none; /* Remove flex grow on smaller screens */
+    width: 90%; /* Optimal width for smaller devices */
+  }
+}
+.headings {
+  text-align: center;
+  background-color: #3d3c3c;
+  color: white;
+  padding: 20px 0;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #3d3c3c;
+}
+
+.plan-card {
+  background-color: #333;
+  color:#fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* or whatever width you prefer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.plan-icon {
+  font-size: 2rem; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 1.25rem;
+  color: #d2ec0f;
+  margin-bottom: 20px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+}
+
+.join-now-button {
+  background-color: #cde51c;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.join-now-button:hover {
+  background-color: #7f8c1d;
+}
+.headings {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+/* General Styles */
+.headings {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #3d3c3c;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* Container for testimonials */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center items */
+  background-color: #3d3c3c;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual testimonial cards */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content in the flex container */
+  align-items: center; /* Horizontally centers content in the flex container */
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  color: #cde51c;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  height: 100%; /* You can set a specific height or min-height if you want all cards to be the same height */
+}
+
+/* Form Styles */
+.testimonial-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers form content */
+  align-items: center; /* Horizontally centers form content */
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+}
+
+/* Update the form group if necessary */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure the form group takes the full width of the form */
+  align-items: center; /* Horizontally centers form elements */
+  gap: 10px;
+}
+
+/* Input fields within the form */
+.testimonial-form input[type="email"],
+.testimonial-form input[type="tel"] {
+  padding: 10px; /* Comfortable padding */
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 4px; /* Rounded corners for the input fields */
+  border: 1px solid #666; /* Subtle border color */
+  background-color: #222; /* Darker background for inputs */
+  color: #d2ec0f; /* Bright color for text to stand out */
+}
+
+/* Submit button styling */
+ .testimonial-form button {
+  padding: 10px;
+  width: 100%; /* Make the button full width */
+ background-color: #d2ec0f;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: calc(100% - 40px); /* Subtracting the total horizontal padding from the width */
+  margin: 10px 0; /* Add margin to the top and bottom if desired */
+  box-sizing: border-box; /* Ensures */
+} 
+
+.testimonial-form button:hover {
+  background-color: #b6b837; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card,
+  .testimonial-form {
+    width: 90%; /* Adjust width on smaller devices for better fit */
+  }
+}
+/* Footer.css */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-links li a:hover {
+  color: #d2ec0f; /* Bright color for hover state */
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 5px 0; /* Spacing between each social link */
+}
+
+.social-icon span {
+  font-size: 1.5rem; /* Larger size for the emoji */
+  margin-right: 8px; /* Space between the emoji and the text */
+}
+
+.social-icon:hover {
+  color: #d2ec0f; /* Change color on hover */
+  text-decoration: underline; /* Optional: Underline on hover for more emphasis */
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+  }
+}
+.footer-text {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
