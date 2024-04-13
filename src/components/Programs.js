@@ -7,7 +7,7 @@ function Programs() {
       <h1 className="headings">Programs</h1>
       <div className="programs-container">
         <div className="program-card">
-          <div className="program-icon">💪</div> {/* Replace with your icon */}
+          <div className="program-icon">💪</div>
           <h5>Strength Training</h5>
           <p>
             In this program, you are trained to improve your strength through
@@ -16,7 +16,7 @@ function Programs() {
           <div className="join-now">Join Now</div>
         </div>
         <div className="program-card">
-          <div className="program-icon">🏃‍♂️</div> {/* Replace with your icon */}
+          <div className="program-icon">🏃‍♂️</div>
           <h5>Cardio Training</h5>
           <p>
             In this program, you are trained to do sequential moves in range of
@@ -25,7 +25,7 @@ function Programs() {
           <div className="join-now">Join Now</div>
         </div>
         <div className="program-card">
-          <div className="program-icon">🔥</div> {/* Replace with your icon */}
+          <div className="program-icon">🔥</div>
           <h5>Fat Burning</h5>
           <p>
             This program is suitable for you who wants to get rid of your fat
@@ -34,7 +34,7 @@ function Programs() {
           <div className="join-now">Join Now</div>
         </div>
         <div className="program-card">
-          <div className="program-icon">❤️</div> {/* Replace with your icon */}
+          <div className="program-icon">❤️</div>
           <h5>Health Fitness</h5>
           <p>
             This programs is designed for those who exercise only for their body

@@ -19,7 +19,7 @@ const PlanCard = ({ emoji, title, features, price }) => {
 function Plans() {
   const planDetails = [
     {
-      emoji: "🏋️‍♀️", // Updated Emoji for Strength Training
+      emoji: "🏋️‍♀️",
       title: "Basic Plan",
       price: "25",
       features: [
@@ -29,7 +29,7 @@ function Plans() {
       ],
     },
     {
-      emoji: "🚴", // Updated Emoji for Cardio Training
+      emoji: "🚴",
       title: "Premium Plan",
       price: "30",
       features: [
@@ -39,7 +39,7 @@ function Plans() {
       ],
     },
     {
-      emoji: "🥗", // Updated Emoji for Fat Burning, representing healthy eating
+      emoji: "🥗",
       title: "Pro Plan",
       price: "45",
       features: [
@@ -49,7 +49,7 @@ function Plans() {
       ],
     },
     {
-      emoji: "🧘", // Updated Emoji for Health Fitness, representing wellness
+      emoji: "🧘",
       title: "Health Plan",
       price: "35",
       features: [

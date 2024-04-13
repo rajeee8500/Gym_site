@@ -1,5 +1,5 @@
 import React from "react";
-import workouts from "../assests/workouts.jpg"; // Ensure correct spelling in the import path
+import workouts from "../assests/workouts.jpg";
 import { Element } from "react-scroll";
 
 function Whyus() {
